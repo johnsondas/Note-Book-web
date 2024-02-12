@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Protest+Riot&display=swap" rel="stylesheet">
+<body>
+
+   <div class="navbar">
+     <h1>Note Book</h1>
+   </div>
+
+   <div class="container" id="contain">
+    <!-- <div class="book-container">
+      <h2>universe</h2>
+      <h4>john</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit temporibus voluptate eaque repellendus nulla alias fugit corporis placeat repudiandae? At.</p>
+      <button>Delete</button>
+      </div> -->
+    </div>
+    
+    <button class="button" id="plusbtn" onclick="showbox()">+</button>
+
+    <div class="popup-overlay" id="overlay"></div>
+    <div class="popup-box" id="box">
+         <h1>Add Notes</h1>
+
+         <form>
+             <label>Add Title</label>
+                <input class="title" id="inputtitle" type="text" placeholder="Enter Title"> <br>
+                <label>Name</label>
+                <input class="name" id="inputname" type="text" placeholder="Enter Name"> <br>
+                <label>Description</label>
+                <textarea class="textarea" id="inputtextarea" placeholder="Enter text" cols="30" rows="5"></textarea> <br>
+
+                <button class="addbutton" id="addbtn">Add</button>
+                <button class="cancelbutton" id="cancelbtn" onclick="canc(event)">Cancel</button>
+         </form>
+    </div>
+
+    <script src="./data.js" type="text/javascript"></script>
+</body>
+</html>
